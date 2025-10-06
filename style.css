@@ -141,7 +141,13 @@ h2 { font-size: 1.3rem; margin-bottom: 15px; text-align: center; border-bottom: 
 .servicios .btn:hover { background: linear-gradient(135deg, #2196f3, #00bcd4); transform: scale(1.07); }
 .casino .btn:hover { background: linear-gradient(135deg, #ff4081, #f50057); transform: scale(1.07); }
 .acerca .btn:hover { background: linear-gradient(135deg, #b366ff, #7a00ff); transform: scale(1.07); }
-.btn img { width: 24px; height: 24px; }
+.btn img {
+  width: 24px;        /* ancho fijo */
+  height: 24px;       /* alto fijo */
+  max-width: 100%;    /* evita que se salga de la sección */
+  object-fit: contain; /* mantiene proporciones */
+  display: block;     /* elimina posibles márgenes internos */
+}
 
 /* --- Footer --- */
 footer { margin-top: 30px; font-size: 0.8rem; color: #aaa; text-align: center; }
