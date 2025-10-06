@@ -27,13 +27,7 @@ section {
   text-align: center;
 }
 
-/* --- Secciones específicas --- */
-.redes {}
-.servicios {}
-.casino {}
-.acerca {}
-
-/* --- Botones --- */
+/* --- Botones grandes (redes, casino, etc.) --- */
 .btn {
   display: flex;
   align-items: center;
@@ -55,12 +49,31 @@ section {
 .casino .btn:hover { background: linear-gradient(135deg, #ff4081, #f50057); transform: scale(1.07); }
 .acerca .btn:hover { background: linear-gradient(135deg, #b366ff, #7a00ff); transform: scale(1.07); }
 
-/* --- Iconos dentro de botones --- */
+/* --- Iconos dentro de botones grandes --- */
 .btn img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   display: block;
+}
+
+/* --- Iconos pequeños de contacto (WhatsApp y Gmail) --- */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-icons img {
+  width: 24px;      /* tamaño pequeño fijo */
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2);
 }
 
 /* --- Foto de perfil --- */
@@ -117,14 +130,4 @@ section {
   transition: all 0.3s ease;
 }
 
-.volver-btn:hover { background: rgba(255,255,255,0.25); transform: scale(1.05); }
-
-/* --- Footer --- */
-footer { margin-top: 30px; font-size: 0.8rem; color: #aaa; text-align: center; }
-
-.tagline { font-size: 1rem; margin-top: 10px; }
-
-@media (max-width: 600px) {
-  h1 { font-size: 1.5rem; }
-  .btn { width: 100%; justify-content: center; }
-}
+.volver-btn:hover { background: rgba(255,255,255,
