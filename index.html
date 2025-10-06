@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DJ RZ Pro Audio | Conéctate</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- FOTO DE PERFIL / LOGO -->
-  <img src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg" alt="Foto de perfil" class="profile-img" />
+  <!-- ELEMENTO DE FONDO FIJO (mantiene la imagen estática incluso en móvil) -->
+  <div class="bg" aria-hidden="true"></div>
 
-  <h1>Conecta con DJ RZ Pro Audio 🎧</h1>
+  <!-- CONTENIDO -->
+  <main class="container">
+    <img src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg"
+         alt="Equipo RZ ProAudio" class="profile-img" />
 
-  <!-- REDES SOCIALES -->
-  <section class="redes">
-    <h2>Redes Sociales</h2>
-    <div class="social-links">
-      <a class="btn" href="https://www.instagram.com/rzproaudio_cuentaoficial?igsh=OTllMnBnZTkzNnVy" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /> Instagram
-      </a>
-      <a class="btn" href="https://www.facebook.com/profile.php?id=61576200524884" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" /> Facebook
-      </a>
-      <a class="btn" href="https://tiktok.com/@rzproaudio_cuentaoficial" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok" /> TikTok
-      </a>
+    <h1>Conecta con DJ RZ Pro Audio 🎧</h1>
+
+    <!-- REDES SOCIALES -->
+    <section class="redes">
+      <h2>Redes Sociales</h2>
+      <div class="social-links">
+        <a class="btn" href="https://www.instagram.com/rzproaudio_cuentaoficial" target="_blank" rel="noopener">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+        </a>
+        <a class="btn" href="https://www.facebook.com/profile.php?id=61576200524884" target="_blank" rel="noopener">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook"> Facebook
+        </a>
+        <a class="btn" href="https://tiktok.com/@rzproaudio_cuentaoficial" target="_blank" rel="noopener">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok"> TikTok
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS DE DJ -->
+    <section class="servicios">
+      <h2>Servicios de DJ 🎵</h2>
+      <p class="serv-text">Animador, DJ, luces y humo para todo tipo de eventos, ideal para fiestas y bodas. 
+         Venta de pendrives y grabación de publicidad para radio y WhatsApp.</p>
+
+      <!-- ICONOS DE CONTACTO PEQUEÑOS (24x24) -->
+      <div class="contact-icons" aria-label="Contactos">
+        <a href="mailto:rzproauido199@gmail.com" target="_blank" rel="noopener" title="Enviar email">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+        </a>
+        <a href="https://wa.me/595986280077" target="_blank" rel="noopener" title="WhatsApp">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+      </div>
+    </section>
+
+    <!-- CASINO -->
+    <section class="casino">
+      <h2>Casino 🎮</h2>
+      <div class="social-links">
+        <a class="btn" href="https://chat.whatsapp.com/EwHuiKSR7A56fVWgF4jeFY" target="_blank" rel="noopener">
+          <img src="https://images.vexels.com/media/users/3/135600/isolated/preview/0afd1d519cedb51a4346bfcc6026d675-icono-de-monedas-de-casino.png" alt="Casino RZ">
+          Casino RZ (Grupo de WhatsApp)
+        </a>
+      </div>
+    </section>
+
+    <!-- ACERCA DE MÍ -->
+    <section class="acerca">
+      <h2>Acerca de mí 🎧</h2>
+      <div class="social-links">
+        <button class="btn" id="verAcerca">Ver más</button>
+      </div>
+    </section>
+
+    <!-- PANEL ACERCA DE MÍ -->
+    <div class="acerca-panel" id="acercaPanel" role="dialog" aria-hidden="true">
+      <h2>Acerca de mí 🎧</h2>
+      <p>DJ especializado en música electrónica, house y techno.</p>
+      <p>Animador profesional con experiencia en bodas, eventos corporativos, fiestas privadas y clubes.</p>
+      <p>Servicios: DJ, animación, iluminación profesional, efectos de humo, venta de pendrives y grabación de publicidad.</p>
+      <p>Para más información: <a href="https://wa.me/595986280077" style="color:#fff;">0986 280 077</a></p>
+      <button class="volver-btn" id="volverAcerca">⬅ Volver</button>
     </div>
-  </section>
 
-  <!-- SERVICIOS DE DJ -->
-  <section class="servicios">
-    <h2>Servicios de DJ 🎵</h2>
-    <p>Animador, DJ, luces y humo para todo tipo de eventos, bodas y más.</p>
-    
-    <!-- ICONOS DE CONTACTO PEQUEÑOS -->
-    <div class="contact-icons">
-      <a href="mailto:rzproauido199@gmail.com" target="_blank">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Gmail" />
-      </a>
-      <a href="https://wa.me/0986280077" target="_blank">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/whatsapp.svg" alt="WhatsApp" />
-      </a>
-    </div>
-  </section>
-
-  <!-- CASINO -->
-  <section class="casino">
-    <h2>Casino 🎮</h2>
-    <div class="social-links">
-      <a class="btn" href="https://chat.whatsapp.com/EwHuiKSR7A56fVWgF4jeFY?mode=ems_wa_t" target="_blank">
-        <img src="https://images.vexels.com/media/users/3/135600/isolated/preview/0afd1d519cedb51a4346bfcc6026d675-icono-de-monedas-de-casino.png?w=360" alt="Casino RZ" /> Casino RZ (Grupo de WhatsApp)
-      </a>
-    </div>
-  </section>
-
-  <!-- ACERCA DE MÍ -->
-  <section class="acerca">
-    <h2>Acerca de mí 😸💭</h2>
-    <div class="social-links">
-      <button class="btn" id="verAcerca">Ver más</button>
-    </div>
-  </section>
-
-  <!-- PANEL ACERCA DE MÍ -->
-  <div class="acerca-panel" id="acercaPanel">
-    <h2>Acerca de mí 🎧</h2>
-    <p>DJ especializado en música electrónica, house y techno.</p>
-    <p>Experiencia en eventos privados y clubes.</p>
-    <p>Siempre buscando crear experiencias únicas para el público.</p>
-    <button class="volver-btn" id="volverAcerca">⬅ Volver</button>
-  </div>
-
-  <!-- PIE DE PÁGINA -->
-  <footer>© 2025 DJ RZ Pro Audio</footer>
+    <footer>© 2025 DJ RZ Pro Audio</footer>
+  </main>
 
   <script>
     // Panel Acerca de mí
@@ -81,8 +89,14 @@
     const panelAcerca = document.getElementById('acercaPanel');
     const btnVolver = document.getElementById('volverAcerca');
 
-    btnAcerca.addEventListener('click', () => { panelAcerca.classList.add('active'); });
-    btnVolver.addEventListener('click', () => { panelAcerca.classList.remove('active'); });
+    btnAcerca.addEventListener('click', () => {
+      panelAcerca.setAttribute('aria-hidden','false');
+      panelAcerca.classList.add('active');
+    });
+    btnVolver.addEventListener('click', () => {
+      panelAcerca.setAttribute('aria-hidden','true');
+      panelAcerca.classList.remove('active');
+    });
   </script>
 </body>
 </html>
