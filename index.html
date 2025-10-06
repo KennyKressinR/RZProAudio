@@ -9,21 +9,13 @@
 <body>
 
   <!-- FOTO DE PERFIL / LOGO -->
-  <img src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg" alt="Foto de perfil" class="profile-img" />
+  <img src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg"
+       srcset="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg 1x"
+       alt="Equipo RZ ProAudio" class="profile-img" />
 
   <!-- NOMBRE Y TAGLINE -->
   <h1>Conecta con DJ RZ Pro Audio 🎧</h1>
-  <p style="text-align:center; margin-bottom:30px;">
-    Animador, DJ, luces y humo para todo tipo de eventos, bodas y más
-  </p>
-
-  <!-- ACERCA DE MÍ -->
-  <section class="acerca">
-    <h2>Acerca de mí 😸💭</h2>
-    <div class="social-links">
-      <button class="btn" id="verAcerca">Ver más</button>
-    </div>
-  </section>
+  <p class="tagline">Animador, DJ, luces y humo para todo tipo de eventos, bodas y más</p>
 
   <!-- REDES SOCIALES -->
   <section class="redes">
@@ -36,47 +28,73 @@
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" /> Facebook
       </a>
       <a class="btn" href="https://tiktok.com/@rzproaudio_cuentaoficial" target="_blank">
-        <img src="https://wiki.nhrl.io/wiki/images/f/ff/TikTok.png" alt="TikTok" /> TikTok
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok" /> TikTok
       </a>
     </div>
   </section>
 
-  <!-- CASINO Y SERVICIOS -->
+  <!-- SERVICIOS / CONTRATACIONES -->
+  <section class="servicios">
+    <h2>Servicios / Contrataciones 🎵</h2>
+    <div class="service-list">
+      <p><strong>RZ ProAudio Sonido & Iluminación</strong></p>
+      <p>✓ DJ para eventos (privados y públicos) · Animador</p>
+      <p>✓ Luces, humo y ambientación · Ideal para bodas</p>
+      <p>✓ Venta de pendrive · Grabación de publicidad para radio y WhatsApp</p>
+
+      <div class="contact-row">
+        <a class="contact-btn" href="https://wa.me/595986280077" target="_blank" aria-label="WhatsApp">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> WhatsApp
+        </a>
+        <a class="contact-btn" href="mailto:rzproauido199@gmail.com" target="_blank" aria-label="Gmail">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"> Email
+        </a>
+      </div>
+
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61576200524884" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" /> Ver perfil Facebook
+      </a>
+    </div>
+  </section>
+
+  <!-- CASINO Y SERVICIOS (ubicado al final como pediste) -->
   <section class="casino">
     <h2>Casino y Servicios 🎮</h2>
     <div class="social-links">
       <a class="btn" href="https://chat.whatsapp.com/EwHuiKSR7A56fVWgF4jeFY?mode=ems_wa_t" target="_blank">
-        <img src="https://images.vexels.com/media/users/3/135600/isolated/preview/0afd1d519cedb51a4346bfcc6026d675-icono-de-monedas-de-casino.png?w=360" alt="Casino RZ" /> Casino RZ (Grupo de WhatsApp)
+        <img src="https://images.vexels.com/media/users/3/135600/isolated/preview/0afd1d519cedb51a4346bfcc6026d675-icono-de-monedas-de-casino.png?w=360" alt="Casino RZ" />
+        Casino RZ (Grupo de WhatsApp)
       </a>
     </div>
   </section>
 
-  <!-- PANEL ACERCA DE MÍ -->
+  <!-- ACERCA DE MÍ (AL FINAL) -->
+  <section class="acerca">
+    <h2>Acerca de mí 🎧</h2>
+    <div class="social-links">
+      <button class="btn" id="verAcerca">Ver más</button>
+    </div>
+  </section>
+
+  <!-- PANEL ACERCA DE MÍ (overlay) -->
   <div class="acerca-panel" id="acercaPanel">
     <h2>Acerca de mí 🎧</h2>
     <p>DJ especializado en música electrónica, house y techno.</p>
-    <p>Animador, luces y humo en eventos privados y públicos, bodas y más.</p>
-    <p>Experiencia creando experiencias únicas para cada evento.</p>
+    <p>Animador profesional con experiencia en bodas, eventos corporativos, fiestas privadas y clubes.</p>
+    <p>Servicios: DJ, animación, iluminación profesional, efectos de humo, venta de pendrives y grabación de publicidad.</p>
+    <p>Para más información: <a href="https://wa.me/595986280077" style="color:#fff;">0986 280 077</a></p>
     <button class="volver-btn" id="volverAcerca">⬅ Volver</button>
   </div>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA SIMPLE -->
   <footer>
     © 2025 DJ RZ Pro Audio
-    <div class="footer-icons">
-      <a href="mailto:rzproauido199@gmail.com" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="Gmail">
-      </a>
-      <a href="https://wa.me/595986280077" target="_blank">
-        <img src="https://static.vecteezy.com/system/resources/previews/016/716/480/non_2x/whatsapp-icon-free-png.png" alt="WhatsApp">
-      </a>
-    </div>
   </footer>
 
-  <!-- SCRIPT -->
+  <!-- SCRIPTS -->
   <script>
-    // Fondo dinámico
-    const fondoURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ZXYLkvcmqaRArp-E-KzBHjcqecTc9PMA_EtcxbASwosQ38lWxtMP5Zk&s=10';
+    // Fondo dinámico (puedes cambiar la URL)
+    const fondoURL = 'https://wallpapers-clan.com/wp-content/uploads/2023/10/halloween-spooky-house-jack-o-lantern-wallpaper-scaled.jpg';
     document.body.style.background = `linear-gradient(135deg, rgba(30,30,47,0.3), rgba(42,42,64,0.3)), url(${fondoURL})`;
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundPosition = 'center';
