@@ -4,17 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DJ RZ ProAudio — Conéctate</title>
+
+  <!-- Si usas Poppins local o Google Fonts en la base, conserva la línea; si no, la puedes quitar -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Fondo estático -->
+  <!-- Fondo estático (elemento separado para evitar "saltos" en móviles) -->
   <div class="bg" aria-hidden="true"></div>
 
   <!-- Contenedor principal -->
   <main class="container">
 
-    <!-- Perfil -->
+    <!-- PERFIL / HEADER -->
     <img class="profile-img"
          src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg"
          alt="Equipo RZ ProAudio">
@@ -22,7 +26,7 @@
     <h1>DJ RZ ProAudio 🎧</h1>
     <p class="intro">Animador, DJ, luces y humo — bodas, fiestas y eventos corporativos.</p>
 
-    <!-- Redes Sociales -->
+    <!-- REDES SOCIALES -->
     <section class="redes" id="redes">
       <h2>Redes Sociales</h2>
       <div class="social-links">
@@ -40,15 +44,15 @@
       </div>
     </section>
 
-    <!-- Servicios / Contrataciones -->
+    <!-- SERVICIOS / CONTRATACIONES -->
     <section class="servicios" id="servicios">
       <h2>Servicios de DJ 🎵</h2>
 
       <p class="serv-text">
-        RZ ProAudio — Sonido e iluminación profesional. <br>
-        ✓ DJ y animación para bodas, cumpleaños, eventos corporativos y clubs. <br>
-        ✓ Luces, humo y ambientación. <br>
-        ✓ Venta de pendrives y grabación de publicidad para radio/WhatsApp.
+        RZ ProAudio — Sonido e iluminación profesional.<br>
+        ✓ DJ y animación para bodas, cumpleaños, eventos corporativos y clubes.<br>
+        ✓ Iluminación profesional, efectos de humo y ambientación.<br>
+        ✓ Venta de pendrives y grabación de publicidad para radio y WhatsApp.
       </p>
 
       <!-- Contact icons pequeños (24x24) dentro de un recuadro -->
@@ -61,10 +65,9 @@
           <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
         </a>
       </div>
-
     </section>
 
-    <!-- Casino (último) -->
+    <!-- CASINO (al final como pediste) -->
     <section class="casino" id="casino">
       <h2>Casino 🎮</h2>
       <div class="social-links">
@@ -75,7 +78,7 @@
       </div>
     </section>
 
-    <!-- Acerca de mí (al final) -->
+    <!-- ACERCA DE MÍ (al final) -->
     <section class="acerca" id="acerca">
       <h2>Acerca de mí 🎧</h2>
       <div class="social-links">
@@ -83,14 +86,14 @@
       </div>
     </section>
 
-    <!-- Overlay panel: Acerca de mí -->
+    <!-- OVERLAY: ACERCA DE MÍ -->
     <div class="acerca-panel" id="acercaPanel" role="dialog" aria-hidden="true">
       <div class="panel-inner">
         <h2>Acerca de RZ ProAudio</h2>
         <p>DJ especializado en música electrónica, house y techno.</p>
         <p>Animador profesional con experiencia en bodas, eventos corporativos, fiestas privadas y clubes.</p>
         <p>Servicios: DJ, animación, iluminación profesional, efectos de humo, venta de pendrives y grabación de publicidad.</p>
-        <p>Contacto directo: <a href="https://wa.me/595986280077" class="panel-link">0986 280 077</a></p>
+        <p>Contacto directo: <a class="panel-link" href="https://wa.me/595986280077">0986 280 077</a></p>
         <button class="volver-btn" id="volverAcerca">⬅ Volver</button>
       </div>
     </div>
@@ -99,28 +102,27 @@
   </main>
 
   <script>
-    // Panel Acerca de mí: accesibilidad + toggles
-    const btnAcerca = document.getElementById('verAcerca');
-    const panel = document.getElementById('acercaPanel');
-    const btnVolver = document.getElementById('volverAcerca');
+    // Overlay toggles + accesibilidad
+    const verAcercaBtn = document.getElementById('verAcerca');
+    const acercaPanel = document.getElementById('acercaPanel');
+    const volverAcercaBtn = document.getElementById('volverAcerca');
 
-    btnAcerca.addEventListener('click', () => {
-      panel.setAttribute('aria-hidden','false');
-      panel.classList.add('active');
-      document.body.style.overflow = 'hidden'; // evitar scroll detrás del overlay
+    verAcercaBtn.addEventListener('click', () => {
+      acercaPanel.classList.add('active');
+      acercaPanel.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
     });
 
-    btnVolver.addEventListener('click', () => {
-      panel.setAttribute('aria-hidden','true');
-      panel.classList.remove('active');
-      document.body.style.overflow = ''; // restaurar scroll
+    volverAcercaBtn.addEventListener('click', () => {
+      acercaPanel.classList.remove('active');
+      acercaPanel.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
     });
 
-    // Cerrar overlay con Escape
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && panel.classList.contains('active')) {
-        panel.setAttribute('aria-hidden','true');
-        panel.classList.remove('active');
+      if (e.key === 'Escape' && acercaPanel.classList.contains('active')) {
+        acercaPanel.classList.remove('active');
+        acercaPanel.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
       }
     });
