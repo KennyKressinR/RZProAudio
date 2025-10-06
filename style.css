@@ -23,35 +23,34 @@ section {
   transition: all 0.4s ease;
 
   /* --- Ajusta aquí el blur: mínimo 2px, máximo 15px --- */
-  backdrop-filter: blur(5px); 
-  /* Cambiar este valor afecta el desenfoque del fondo detrás de la sección */
+  backdrop-filter: blur(5px);
   /* 2px = poco desenfoque, 15px = desenfoque muy marcado */
 }
 
 /* --- REDES SOCIALES --- */
 .redes {
-  background: rgba(0,0,0,0.6); /* negro translúcido, ajusta opacidad (0.1 a 0.9) */
+  background: rgba(0,0,0,0.6); /* 60% negro opaco */
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* --- SERVICIOS / CONTRATACIONES --- */
 .servicios {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.6); /* 60% negro opaco */
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* --- CASINO Y SERVICIOS --- */
+/* --- CASINO --- */
 .casino {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.6); /* 60% negro opaco */
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* --- ACERCA DE MÍ --- */
 .acerca {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.6); /* 60% negro opaco */
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -150,4 +149,4 @@ footer { margin-top: 30px; font-size: 0.8rem; color: #aaa; text-align: center; }
 @media (max-width: 600px) {
   h1 { font-size: 1.5rem; }
   .btn { width: 100%; justify-content: center; }
-                                                    }
+}
