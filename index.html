@@ -10,7 +10,6 @@
 
   <!-- FOTO DE PERFIL / LOGO -->
   <img src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg"
-       srcset="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg 1x"
        alt="Equipo RZ ProAudio" class="profile-img" />
 
   <!-- NOMBRE Y TAGLINE -->
@@ -57,7 +56,7 @@
     </div>
   </section>
 
-  <!-- CASINO Y SERVICIOS (ubicado al final como pediste) -->
+  <!-- CASINO Y SERVICIOS -->
   <section class="casino">
     <h2>Casino y Servicios 🎮</h2>
     <div class="social-links">
@@ -68,7 +67,7 @@
     </div>
   </section>
 
-  <!-- ACERCA DE MÍ (AL FINAL) -->
+  <!-- ACERCA DE MÍ -->
   <section class="acerca">
     <h2>Acerca de mí 🎧</h2>
     <div class="social-links">
@@ -76,7 +75,7 @@
     </div>
   </section>
 
-  <!-- PANEL ACERCA DE MÍ (overlay) -->
+  <!-- PANEL ACERCA DE MÍ -->
   <div class="acerca-panel" id="acercaPanel">
     <h2>Acerca de mí 🎧</h2>
     <p>DJ especializado en música electrónica, house y techno.</p>
@@ -86,18 +85,19 @@
     <button class="volver-btn" id="volverAcerca">⬅ Volver</button>
   </div>
 
-  <!-- PIE DE PÁGINA SIMPLE -->
-  <footer>
-    © 2025 DJ RZ Pro Audio
-  </footer>
+  <footer>© 2025 DJ RZ Pro Audio</footer>
 
-  <!-- SCRIPTS -->
   <script>
-    // Fondo dinámico (puedes cambiar la URL)
-    const fondoURL = 'https://wallpapers-clan.com/wp-content/uploads/2023/10/halloween-spooky-house-jack-o-lantern-wallpaper-scaled.jpg';
-    document.body.style.background = `linear-gradient(135deg, rgba(30,30,47,0.3), rgba(42,42,64,0.3)), url(${fondoURL})`;
+    // Fondo dinámico con fallback
+    const fondoURL = 'https://png.pngtree.com/thumb_back/fh260/background/20240612/pngtree-control-panel-used-by-the-dj-to-mix-live-music-image_15748189.jpg';
+    if (fondoURL && fondoURL.length > 5) {
+      document.body.style.background = `linear-gradient(135deg, rgba(30,30,47,0.3), rgba(42,42,64,0.3)), url(${fondoURL})`;
+    } else {
+      document.body.style.background = `linear-gradient(135deg,#1e1e2f,#2a2a40)`; // fondo predeterminado
+    }
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundAttachment = 'fixed';
 
     // Panel Acerca de mí
     const btnAcerca = document.getElementById('verAcerca');
