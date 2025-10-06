@@ -183,12 +183,6 @@ h2 {
 }
 
 /* --- Pie de página --- */
-footer { 
-  margin-top: 30px; 
-  font-size: 0.85rem; 
-  color: #aaa; 
-  text-align: center; 
-}
 
 .footer-icons {
   display: flex;
@@ -200,8 +194,11 @@ footer {
 .footer-icons a img {
   width: 28px;
   height: 28px;
-  filter: invert(1);
+  /* Quitar invert para que los iconos conserven sus colores */
+  filter: none;
 }
+
+
 
 /* --- Adaptación para móviles --- */
 @media (max-width: 600px) { 
