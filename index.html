@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <!-- OVERLAY OSCURO -->
+  <div class="overlay"></div>
+
   <!-- FOTO DE PERFIL / LOGO -->
   <img src="https://raw.githubusercontent.com/KennyKressinR/RZProAudio/refs/heads/main/Equipo.jpg"
        alt="Equipo RZ ProAudio" class="profile-img" />
@@ -27,7 +30,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" /> Facebook
       </a>
       <a class="btn" href="https://tiktok.com/@rzproaudio_cuentaoficial" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok" /> TikTok
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok" /> TikTok
       </a>
     </div>
   </section>
@@ -88,10 +91,10 @@
   <footer>© 2025 DJ RZ Pro Audio</footer>
 
   <script>
-    // Fondo dinámico con fallback
+    // Fondo dinámico con overlay
     const fondoURL = 'https://png.pngtree.com/thumb_back/fh260/background/20240612/pngtree-control-panel-used-by-the-dj-to-mix-live-music-image_15748189.jpg';
     if (fondoURL && fondoURL.length > 5) {
-      document.body.style.background = `linear-gradient(135deg, rgba(30,30,47,0.3), rgba(42,42,64,0.3)), url(${fondoURL})`;
+      document.body.style.background = `linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0.25) ), url(${fondoURL})`;
     } else {
       document.body.style.background = `linear-gradient(135deg,#1e1e2f,#2a2a40)`; // fondo predeterminado
     }
